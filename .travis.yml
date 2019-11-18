@@ -4,7 +4,6 @@ cache: npm
 script: npm run build
 deploy:
   provider: pages
-  cleanup: true
   token: $GITHUB_TOKEN
   local_dir: dist
   verbose: true
