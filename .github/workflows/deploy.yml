@@ -1,6 +1,9 @@
-name: CI
+name: Build and Deploy to gh-pages
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -10,4 +13,9 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@2.0.3
-
+        env:
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          BASE_BRANCH: master
+          BRANCH: gh-pages
+          FOLDER: dist
+          BUILD_SCRIPT: npm ci && npm run-script build
