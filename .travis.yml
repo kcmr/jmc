@@ -8,5 +8,6 @@ deploy:
   token: $GITHUB_TOKEN
   local_dir: dist
   verbose: true
+  edge: true
   on:
     branch: master
