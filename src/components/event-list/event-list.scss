@@ -1,0 +1,56 @@
+@import '../../styles/utils';
+
+.EventList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event {
+  margin: 0 grid-units(4) grid-units(4);
+  padding: grid-units(4);
+  background-color: var(--color-neutral-light);
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.date {
+  @include font-size-small;
+  font-weight: var(--font-weight-medium);
+  opacity: 0.5;
+  margin-bottom: grid-units(2);
+}
+
+.title {
+  @include font-size-medium;
+  font-weight: var(--font-weight-bold);
+}
+
+.speaker {
+  @include font-size-small;
+  font-style: italic;
+  opacity: 0.8;
+
+  &:not(:empty) {
+    margin-top: grid-units(2);
+  }
+}
+
+.alt {
+  background-color: var(--color-gray-medium);
+}
+
+.current {
+  color: var(--color-gray-light);
+  background-color: var(--color-gray-dark);
+
+  .date {
+    color: var(--color-accent);
+    opacity: 1;
+  }
+}
+
+.hour {
+  &:last-child::before {
+    content: "– "
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../styles/utils';
+
+.Header {
+  margin: 0;
+  padding: grid-units(4);
+}
+
+.title {
+  display: block;
+  @include font-size-large;
+  font-weight: var(--font-weight-light);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.subTitle {
+  display: block;
+  @include font-size-medium;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-dark);
+}

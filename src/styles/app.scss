@@ -1,0 +1,43 @@
+@import 'utils';
+
+html {
+  --color-pink: #FF0070;
+  --color-blue-green: #00FFEE;
+
+  --color-neutral-light: #fff;
+  --color-gray-light: #F3F4F8;
+  --color-gray-medium: #E3E5EC;
+  --color-gray-dark: #363C58;
+
+  --font-stack-sans: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  --font-weight-light: 200;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  --font-size-small: #{rem(14)};
+  --font-size-medium: #{rem(18)};
+  --font-size-large: #{rem(32)};
+
+  --line-height-for-small: 1.5;
+  --line-height-for-medium: 1.25;
+  --line-height-for-large: 1.25;
+
+  --grid-size: #{rem(4)};
+}
+
+[theme="bubble-gum"] {
+  --color-accent: var(--color-pink);
+}
+
+[theme="radioactive"] {
+  --color-accent: var(--color-blue-green);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-stack-sans);
+  color: var(--color-gray-dark);
+  background-color: var(--color-gray-light);
+}

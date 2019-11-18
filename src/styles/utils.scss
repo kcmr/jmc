@@ -1,0 +1,37 @@
+$em-base: 16px !default;
+
+@function strip-unit($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-unit($pxval);
+  }
+
+  $base: $em-base;
+  @if not unitless($base) {
+    $base: strip-unit($base);
+  }
+
+  @return ($pxval / $base) * 1rem;
+}
+
+@function grid-units($units: 1) {
+  @return calc(var(--grid-size) * #{$units});
+}
+
+@mixin font-size-small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-for-small);
+}
+
+@mixin font-size-medium {
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-for-medium);
+}
+
+@mixin font-size-large {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-for-large);
+}

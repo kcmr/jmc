@@ -1,0 +1,59 @@
+{
+  "title": "Agenda",
+  "description": "Lorem ipsum dolor",
+  "events": [
+    {
+      "title": "Odit sequi accusamus est temporibus est",
+      "time": {
+        "start": "2019-11-17 12:55",
+        "end": "2019-11-17 13:00"
+      },
+      "speaker": "Arne Abshire",
+      "talk": true
+    },
+    {
+      "title": "Et ex dicta rem animi nulla pariatur necessitatibus dolorem sint",
+      "time": {
+        "start": "2019-11-17 13:01",
+        "end": "2019-11-17 13:03"
+      },
+      "speaker": "Kathryne Schuster",
+      "talk": true
+    },
+    {
+      "title": "Omnis quia adipisci est laboriosam",
+      "time": {
+        "start": "2019-11-17 13:04",
+        "end": "2019-11-17 13:20"
+      },
+      "speaker": "Donnell Russel",
+      "talk": true
+    },
+    {
+      "title": "Coffee break",
+      "time": {
+        "start": "2019-11-17 13:21",
+        "end": "2019-11-17 13:30"
+      },
+      "talk": false
+    },
+    {
+      "title": "Dolores a hic odit saepe error minima repellat veniam delectus",
+      "time": {
+        "start": "2019-11-17 13:31",
+        "end": "2019-11-17 13:40"
+      },
+      "speaker": "Elvie Gutmann",
+      "talk": true
+    },
+    {
+      "title": "Vel molestiae sequi",
+      "time": {
+        "start": "2019-11-17 13:41",
+        "end": "2019-11-17 13:50"
+      },
+      "speaker": "Ellie Lehner",
+      "talk": true
+    }
+  ]
+}
